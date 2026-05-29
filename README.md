@@ -1,20 +1,50 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Trading Alerts & Predictions Dashboard 📈
 
-# Run and deploy your AI Studio app
+A real-time crypto and forex trading alerts dashboard with arbitrage 
+detection, cross-exchange execution, and portfolio management — built 
+with TypeScript and React.
 
-This contains everything you need to run your app locally.
+## 🚀 Features
 
-View your app in AI Studio: https://ai.studio/apps/5a62d05c-eb58-4895-aa56-3590d647491f
+### Arbitrage Engine
+- Detects cross-exchange arbitrage opportunities in real time
+- Supports Binance, Coinbase, Kraken, London FX and more
+- Clickable toggles to link/unlink exchange API bridges
+- Tracks accumulated yield and profit metrics per opportunity
 
-## Run Locally
+### Bridge API Handshake
+- Sub-second authorization flow for disconnected exchanges
+- Sequential automated handshaking phases:
+  - Negotiating API credentials
+  - Synchronizing order books
+  - Establishing trade connectivity
 
-**Prerequisites:**  Node.js
+### Portfolio & Wallet
+- Direct wallet settlement — arbitrage profits credited in real time
+- USD Portfolio Wallet balance updated on each execution
+- Full traceable ledger of all arbitrage transactions
+  (e.g. "Arbitrage Yield via Binance → Bybit")
 
+### Market Grid & Alerts
+- Live asset detail panels with market grid view
+- Alert panel for triggered trading signals
+- Wallet panel for balance and settlement tracking
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🛠️ Tech Stack
+- **Language:** TypeScript
+- **Frontend:** React + Vite
+- **Animations:** Motion/React + AnimatePresence
+- **Icons:** Lucide React
+- **Backend:** Node.js (server.ts)
+
+## ⚙️ Setup
+```bash
+npm install
+cp .env.example .env
+# Add your API keys to .env
+npm run dev
+```
+
+## 🔗 Related Projects
+- [gifttocash-backend](https://github.com/nemzco-pixel/gifttocash-backend)
+- [gifttocash-frontend](https://github.com/nemzco-pixel/gifttocash-frontend)
